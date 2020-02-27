@@ -1,9 +1,3 @@
-# Documentación del proyecto AREDN en Español
-This repository is for creating Spanish documentation for the AREDN project so it can be made available on ReadTheDocs.
-
-## ¿Cómo ver esta documentación?:
-To view the AREDN documentation in a web browser, navigate to [https://arednmesh.readthedocs.io/en/latest/](https://arednmesh.readthedocs.io/en/latest/) or select your choice from the `Docs` dropdown menu on [https://arednmesh.org](https://arednmesh.org).
-
 ## Exportar a PDF:
 While viewing the AREDN documentation in your web browser, you will see the contents list in the left panel. At the bottom of the panel is a drawer labeled "ReadTheDocs" showing the version you are viewing. Click the label bar to open it. From the drawer you can export the documentation set as a single PDF or Epub file. This is handy if you want to take a PDF copy of the guidebook with you into the field where you do not have Internet access.
 
