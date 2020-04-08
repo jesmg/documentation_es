@@ -1,6 +1,5 @@
----
 name: Send notification to Telegram group
-on: [pull_request]
+on: [push, pull_request]
 
 jobs:
   build:
