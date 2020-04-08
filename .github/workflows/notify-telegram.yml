@@ -1,0 +1,15 @@
+---
+name: Send notification to Telegram group
+on: [pull_request]
+
+jobs:
+  build:
+    name: Notify telegram
+    runs-on: ubuntu-latest
+    steps:
+      - uses: yanzay/notify-telegram@v0.1.0
+      if: always()
+      with:
+        chat: ${{ secrets.chat }}
+        token: ${{ secrets.token }}
+        status: ${{ job.status }}
