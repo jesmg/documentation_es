@@ -1,14 +1,15 @@
 name: Send notification to Telegram group
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   build:
-    name: Notify telegram
+    name: Send notification
     runs-on: ubuntu-latest
     steps:
-      - uses: yanzay/notify-telegram@v0.1.0
-        if: always()
-        with:
-          chat: ${{ secrets.chat }}
-          token: ${{ secrets.token }}
-          status: ${{ job.status }}
+    - name: send custom message
+      uses: appleboy/telegram-action@master
+      with:
+        to: ${{ secrets.TELEGRAM_TO }}
+        token: ${{ secrets.TELEGRAM_TOKEN }}
+        message: |
+          El usuario ${{ github.actor }} ha enviado un nuevo pull request al repositorio ${{ repo }}. ¡Gracias!
